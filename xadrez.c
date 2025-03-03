@@ -23,5 +23,22 @@ int main() {
         j++;
     } while (j<= 8);
 
+    //Movimento do Cavalo (2 para baixo, 1 para esquerda)
+    printf("\nMovimento do Cavalo:\n");
+    int passosParaBaixo = 2; // Número de casas para baixo
+    int passosParaEsquerda = 1; // Número de casas para esquerda
+
+    // Loop for para o movimento vertical - para baixo
+    for (int k = 1; k <= passosParaBaixo; k++) {
+        printf("Casa %d: Baixo\n", k);
+    }
+
+    // Loop while para o movimento horizontal (para a esquerda)
+    int l = 1;
+    while (l <= passosParaEsquerda) {
+        printf("Casa %d: Esquerda\n", passosParaBaixo + l);
+        l++;
+    }
+
     return 0;
     }
